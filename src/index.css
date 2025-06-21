@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import "tailwindcss";
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f97316; /* orange-500 */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ea580c; /* orange-600 */
+}
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    color-scheme: dark;
+}
+
+@layer components {
+    .gradient {
+        @apply bg-gradient-to-r from-orange-500 to-orange-700;
+    }
+
+    .title {
+        @apply text-3xl sm:text-5xl text-center;
+    }
+
+    .btn {
+        @apply inline-flex justify-center items-center w-full h-12 p-5 mt-20 tracking-tight text-xl border border-orange-900 rounded-lg text-center;
+    }
+
+    .btn-hover {
+        @apply hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-700 transition duration-500;
+    }
+}
