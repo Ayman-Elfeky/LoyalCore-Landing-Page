@@ -1,6 +1,6 @@
 # Loylity Landing Page
 
-![Landing Page Screenshot](./sc.png)
+![Landing Page Screenshot](./src/assets/sc.png)
 
 ## Overview
 This is a modern landing page built for Loylity, developed using React and Vite. The landing page features a responsive design with multiple sections including hero, features, pricing, workflow, and frequently asked questions.
